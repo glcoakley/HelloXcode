@@ -7,17 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import <Foundation/Foundation.h>
 
 @implementation AppDelegate
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    return YES;
-}
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
@@ -46,4 +38,31 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+    [self.window addSubview:createLbl( 5.0, 50.0,  @"Hello Xcode" )];
+    [self.window addSubview:createLbl( 5.0, 100.0, @"by" )];
+    [self.window addSubview:createLbl( 5.0, 150.0, @"Gary Coakley" )];
+
+    self.window.rootViewController=[UIViewController new];
+    NSLog(@"Hello Xcode (again)");
+    self.window.backgroundColor = [UIColor redColor];
+    [self.window makeKeyAndVisible];
+     
+    
+    return YES;
+}
+
+UILabel *createLbl( float aOver, float aDown, NSString *aNStr )
+{
+    UILabel *lblNew;
+
+    lblNew = [[UILabel alloc] initWithFrame:CGRectMake(aOver, aDown, 300.0, 100.0)];
+    lblNew.font = [UIFont systemFontOfSize:48.0];
+    lblNew.text=aNStr;
+    lblNew.textColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Background"]];
+    return lblNew;
+}
 @end

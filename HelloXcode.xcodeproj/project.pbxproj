@@ -19,6 +19,7 @@
 		62DD074E1A69DE26007FC676 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62DD07361A69DE26007FC676 /* UIKit.framework */; };
 		62DD07561A69DE26007FC676 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62DD07541A69DE26007FC676 /* InfoPlist.strings */; };
 		62DD07581A69DE26007FC676 /* HelloXcodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD07571A69DE26007FC676 /* HelloXcodeTests.m */; };
+		62DD07631A69E539007FC676 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 62DD07621A69E539007FC676 /* Background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,6 @@
 		62DD073C1A69DE26007FC676 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		62DD073E1A69DE26007FC676 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		62DD07401A69DE26007FC676 /* HelloXcode-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloXcode-Prefix.pch"; sourceTree = "<group>"; };
-		62DD07411A69DE26007FC676 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		62DD07421A69DE26007FC676 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		62DD07441A69DE26007FC676 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		62DD074A1A69DE26007FC676 /* HelloXcodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloXcodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +48,8 @@
 		62DD07531A69DE26007FC676 /* HelloXcodeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloXcodeTests-Info.plist"; sourceTree = "<group>"; };
 		62DD07551A69DE26007FC676 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		62DD07571A69DE26007FC676 /* HelloXcodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloXcodeTests.m; sourceTree = "<group>"; };
+		62DD07611A69DF7A007FC676 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "../../../../Downloads/iOS 7 Projects/Hour 02/Projects/iPhone/HelloXcode/HelloXcode/AppDelegate.h"; sourceTree = "<group>"; };
+		62DD07621A69E539007FC676 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +109,8 @@
 		62DD07381A69DE26007FC676 /* HelloXcode */ = {
 			isa = PBXGroup;
 			children = (
-				62DD07411A69DE26007FC676 /* AppDelegate.h */,
+				62DD07611A69DF7A007FC676 /* AppDelegate.h */,
+				62DD07621A69E539007FC676 /* Background.png */,
 				62DD07421A69DE26007FC676 /* AppDelegate.m */,
 				62DD07441A69DE26007FC676 /* Images.xcassets */,
 				62DD07391A69DE26007FC676 /* Supporting Files */,
@@ -219,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62DD07631A69E539007FC676 /* Background.png in Resources */,
 				62DD073D1A69DE26007FC676 /* InfoPlist.strings in Resources */,
 				62DD07451A69DE26007FC676 /* Images.xcassets in Resources */,
 			);
